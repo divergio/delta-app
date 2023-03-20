@@ -1,0 +1,21 @@
+env:
+  desk: 'delta'
+  urbit_path: '~/Urbit/urbit/urbit'
+  repo_path: '~/Developer/delta/desk'
+  ship_path: '~/Urbit'
+script:
+  - merge:
+    - cmd: 'merge %delta our %base'
+      type: 'urbit:app'
+  - mount:
+    - cmd: 'mount %delta'
+      type: 'urbit:app'
+  - sync:
+    - cmd: '~/Developer/delta/ops/sync.sh'
+      type: 'system'
+  - commit:
+    - cmd: 'commit %delta'
+      type: 'urbit:app'
+  - install:
+    - cmd: 'install our %delta'
+      type: 'urbit:app'
