@@ -27,6 +27,7 @@
   =/  emitted  (~(on-watch agent (bowl run)) `path`[%values ~])
   =/  card  (snag 0 -.emitted) :: tried to make this more thorough, but had
                                :: trouble digging into the card structure
+                               :: probably needed this: https://github.com/sigilante/curriculum/blob/master/asl-2023.1/asl3.md#debugging-vases-and-cages
   %+  expect-eq
     !>  %give
     !>  -.card
