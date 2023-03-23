@@ -1,4 +1,3 @@
-;>
 - Developer: ~novrul-falfen
 - License: MIT
 - App link: [~novrul-falfen/delta](web+urbitgraph://~novrul-falfen/delta)
